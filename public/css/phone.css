@@ -1,0 +1,302 @@
+@media only screen and (max-width: 600px) {
+    #navbar {
+        margin: 0;
+    }
+
+    #hamburger {
+        display: flex !important;
+        cursor: pointer;
+    }
+
+    #hamLine {
+        width: 30px;
+        height: 4px;
+        border-radius: 20px;
+        background-color: black;
+    }
+
+    #hamLine::before {
+        content: "";
+        width: 30px;
+        height: 4px;
+        border-radius: 20px;
+        background-color: black;
+        position: absolute;
+        transform: translateY(-8px);
+    }
+
+    #hamLine::after {
+        content: "";
+        width: 30px;
+        height: 4px;
+        border-radius: 20px;
+        background-color: black;
+        position: absolute;
+        transform: translateY(8px);
+    }
+
+    #rightLinks {
+        display: none;
+    }
+
+    .mobile-leftNav {
+        display: none;
+    }
+
+    .mobile-rightNav {
+        height: 100vh;
+        z-index: 99;
+        color: white;
+    }
+
+    .mobile-nav {
+        padding: 0 !important;
+    }
+
+    .mobile-rightLinks {
+        display: flex !important;
+        height: 100vh;
+        position: fixed;
+        z-index: 99;
+        background-color: black;
+        color: white;
+        width: 100%;
+    }
+
+    .mobile-ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        font-size: 1.7rem;
+    }
+
+    .mobile-hamburger {
+        position: fixed;
+        z-index: 99;
+        top: 4%;
+        right: 4%;
+    }
+
+    .mobile-hamLine {
+        transition: all linear 0.5s;
+        transform: rotate(360deg);
+        background: transparent !important;
+    }
+
+    .mobile-hamLine::before {
+        background-color: white !important;
+        transform: rotate(45deg) !important;
+    }
+
+    .mobile-hamLine::after {
+        background-color: white !important;
+        transform: rotate(-45deg) !important;
+    }
+
+    #container {
+        margin: 0;
+        margin-top: 2rem;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #left {
+        width: inherit;
+    }
+
+    #left #about {
+        width: 100%;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    #links ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #links ul li {
+        font-size: 1.3rem;
+        padding: 1rem;
+        margin-right: 0;
+    }
+
+    .linkImg img {
+        width: 1.3rem;
+    }
+
+    #right {
+        width: 100%;
+    }
+
+    #right img {
+        width: 50%;
+    }
+
+    #aboutMe {
+        width: 100%;
+        padding-left: 2rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        /* height: 100vh; */
+        height: auto;
+        padding-right: 2rem;
+    }
+
+    #projectContainer {
+        top: -5vh;
+        position: relative;
+    }
+
+    #projectHeading {
+        width: 90%;
+        height: 10vh;
+        border-radius: 1rem;
+    }
+
+    #projectHeading p {
+        font-size: 2rem;
+    }
+
+    #projectArea {
+        flex-direction: column;
+        height: fit-content;
+        gap: 3rem;
+    }
+
+    .projectName {
+        width: 90%;
+        margin: 0;
+    }
+
+    .projectName::before {
+        width: 72%;
+    }
+
+    #contact {
+        display: block;
+        padding: 1rem;
+    }
+
+    #form {
+        align-items: flex-start;
+    }
+
+    .name_email {
+        width: 100%;
+    }
+
+    .name_email input {
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: inherit;
+    }
+
+    #messageDiv {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    #message {
+        margin: 0;
+    }
+
+    #messageDiv textarea {
+        width: 100%;
+    }
+
+    #submitBtn {
+        margin: auto;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    #navbar {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+    #links ul li {
+        padding: 1rem;
+    }
+
+    #links ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #aboutMe {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    #projectHeading {
+        width: 85%;
+    }
+
+    .projectName {
+        width: 100%;
+    }
+
+    #projectContainer {
+        position: relative;
+    }
+
+    #projectArea {
+        flex-direction: column;
+        height: fit-content;
+        gap: 3rem;
+        padding: 2rem;
+    }
+
+    .projectName {
+        margin: 0;
+    }
+
+    #form {
+        align-items: flex-start;
+    }
+
+    .name_email {
+        width: 100%;
+    }
+
+    .name_email input {
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: inherit;
+    }
+
+    #messageDiv {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    #message {
+        margin: 0;
+    }
+
+    #messageDiv textarea {
+        width: 100%;
+    }
+
+    #submitBtn {
+        margin: auto;
+        margin-top: 1rem;
+    }
+}
