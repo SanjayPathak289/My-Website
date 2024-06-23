@@ -19,7 +19,7 @@ hbs.registerPartials(partialPath);
 app.set("view engine", "hbs")
 app.use(express.urlencoded());
 app.use(express.json());
-job();
+job.start();
 app.get("/", (req, res) => {
   res.render("index")
 })
