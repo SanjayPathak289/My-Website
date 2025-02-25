@@ -82,6 +82,9 @@ app.post("/contact", (req, res) => {
   })
   res.redirect("/contact");
 })
+app.get("/privacy", (req, res) => {
+  res.render("privacy");
+})
 
 app.get("*", (req, res) => {
   res.render("404")
