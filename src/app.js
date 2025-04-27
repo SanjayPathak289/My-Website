@@ -85,6 +85,9 @@ app.post("/contact", (req, res) => {
 app.get("/privacy", (req, res) => {
   res.render("privacy");
 })
+app.get("/termsofservice", (req, res) => {
+  res.render("terms");
+})
 
 app.get("*", (req, res) => {
   res.render("404")
